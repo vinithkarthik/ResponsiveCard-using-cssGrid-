@@ -16,7 +16,7 @@ body {
   transition: transform 0.8s;
 }
 
-.card .card .card-desc {
+.card .card-desc {
   transition: color 0.5s;
 }
 
