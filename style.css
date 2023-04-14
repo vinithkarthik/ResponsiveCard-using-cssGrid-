@@ -1,0 +1,66 @@
+body {
+  padding: 0 10vw;
+  margin-top: 50px;
+}
+
+.parent {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: white;
+}
+
+.card .card-img {
+  width: 100%;
+  height: 20vw;
+  transition: transform 0.8s;
+}
+
+.card .card .card-desc {
+  transition: color 0.5s;
+}
+
+.card .card-img:hover {
+  transform: scale(1.1);
+}
+
+.card .card-desc:hover {
+  color: firebrick;
+}
+
+.card {
+  cursor: pointer;
+}
+
+@media (min-width: 820px) {
+  .card-big {
+    grid-column: span 2;
+  }
+
+  .card-small {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 819px) {
+  .card-big {
+    grid-column: span 4;
+  }
+
+  .card-small {
+    grid-column: span 2;
+  }
+
+  .card-img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 449px) {
+  .card {
+    grid-column: span 4;
+  }
+  .card-img {
+    height: 200px;
+  }
+}
